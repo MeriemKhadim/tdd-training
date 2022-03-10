@@ -27,11 +27,13 @@ class FizzBuzzConverterTest {
         FizzBuzzConverter fizzBuzzConverter=new FizzBuzzConverter();
         String result=fizzBuzzConverter.convert(6);
         assertEquals("Fizz",result);
-    } @Test
+    }
+    @Test
     public void shouldReturnFizzWhenInputIs15(){
         FizzBuzzConverter fizzBuzzConverter=new FizzBuzzConverter();
-        String result=fizzBuzzConverter.convert(10);
-        assertEquals("Buzz",result);
+        String result=fizzBuzzConverter.convert(15);
+        assertEquals("FizzBuzz",result);
     }
+
 
 }
