@@ -46,6 +46,12 @@ class FizzBuzzConverterTest {
         String result=fizzBuzzConverter.convert(10);
         assertEquals("Buzz",result);
     }
+    @Test
+    public void shouldReturnNullWhenInputIsAnotherOne(){
+        FizzBuzzConverter fizzBuzzConverter=new FizzBuzzConverter();
+        String result=fizzBuzzConverter.convert(2);
+        assertEquals(null,result);
+    }
 
 
 }
