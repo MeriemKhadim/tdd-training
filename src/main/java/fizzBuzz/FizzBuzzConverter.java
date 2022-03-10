@@ -4,7 +4,7 @@ public class FizzBuzzConverter {
 
 
     public String convert(int i) {
-        if (i == 3) return "Fizz";
+        if (i % 3 == 0) return "Fizz";
         return "Buzz";
     }
 }

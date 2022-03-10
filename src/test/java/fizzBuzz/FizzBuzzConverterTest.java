@@ -22,5 +22,11 @@ class FizzBuzzConverterTest {
     }
 
 
+    @Test
+    public void shouldReturnFizzWhenInputIsMultipleOf3(){
+        FizzBuzzConverter fizzBuzzConverter=new FizzBuzzConverter();
+        String result=fizzBuzzConverter.convert(6);
+        assertEquals("Fizz",result);
+    }
 
 }
