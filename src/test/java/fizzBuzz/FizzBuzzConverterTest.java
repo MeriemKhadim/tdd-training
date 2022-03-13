@@ -15,7 +15,7 @@ class FizzBuzzConverterTest {
     }
 
     @Test
-    public void shouldReturnFizzWhenInputIs5(){
+    public void shouldReturnBuzzWhenInputIs5(){
         FizzBuzzConverter fizzBuzzConverter=new FizzBuzzConverter();
         String result=fizzBuzzConverter.convert(5);
         assertEquals("Buzz",result);
@@ -29,19 +29,19 @@ class FizzBuzzConverterTest {
         assertEquals("Fizz",result);
     }
     @Test
-    public void shouldReturnFizzWhenInputIs15(){
+    public void shouldReturnFizzBuzzWhenInputIs15(){
         FizzBuzzConverter fizzBuzzConverter=new FizzBuzzConverter();
         String result=fizzBuzzConverter.convert(15);
         assertEquals("FizzBuzz",result);
     }
     @Test
-    public void shouldReturnFizzWhenInputIsMultipleOf15(){
+    public void shouldReturnFizzBuzzWhenInputIsMultipleOf15(){
         FizzBuzzConverter fizzBuzzConverter=new FizzBuzzConverter();
         String result=fizzBuzzConverter.convert(15);
         assertEquals("FizzBuzz",result);
     }
     @Test
-    public void shouldReturnFizzWhenInputIsMultipleOf5(){
+    public void shouldReturnBuzzWhenInputIsMultipleOf5(){
         FizzBuzzConverter fizzBuzzConverter=new FizzBuzzConverter();
         String result=fizzBuzzConverter.convert(10);
         assertEquals("Buzz",result);
