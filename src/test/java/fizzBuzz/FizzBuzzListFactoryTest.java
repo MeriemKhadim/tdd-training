@@ -14,4 +14,11 @@ public class FizzBuzzListFactoryTest {
 
         Assert.assertEquals(List.of(1),result);
     }
+    @Test
+    public void listFacoryShouldReturnAListWichContains1And2WhenInputIs2(){
+
+        List result= FizzBuzzListFactory.listFactory(2);
+
+        Assert.assertEquals(List.of(1,2),result);
+    }
 }
