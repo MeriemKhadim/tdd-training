@@ -19,5 +19,10 @@ public class FizzBuzzEngineTest {
         FizzBuzzEngine.engine(1);
         Assert.assertEquals("1", outputStreamCaptor.toString().trim());
     }
+    @Test
+    public void engineShouldReturn12WhenInputIs2(){
+        FizzBuzzEngine.engine(2);
+        Assert.assertEquals("12", outputStreamCaptor.toString().trim());
+    }
 
 }
